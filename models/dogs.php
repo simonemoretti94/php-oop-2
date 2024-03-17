@@ -1,24 +1,8 @@
 <?php
-
-require_once __DIR__ . '/submacro/foods.php';
-require_once __DIR__ . '/submacro/games.php';
-require_once __DIR__ . '/submacro/kennels.php';
-
-class Dogs
+class DogsSpecs extends Product
 {
-    function __construct(public Foods $foods, public Games $games, public Kennels $kennels)
+    function __construct($name, $price, $path, $categories,)
     {
-        $this->foods = $foods;
-        $this->games = $games;
-        $this->kennels = $kennels;
-    }
-}
-
-class DogsSpecs extends Dogs
-{
-    function __construct($foods, $games, $kennels, public bool $biters)
-    {
-        parent::__construct($foods, $games, $kennels);
-        $this->biters = $biters;
+        parent::__construct($name, $price, $path, $categories);
     }
 }
