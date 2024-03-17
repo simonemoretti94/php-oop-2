@@ -7,10 +7,10 @@
 
     <div class="d-none">
         <?php var_dump($dogsProducts) ?>
-        <?php var_dump($catsProducts) ?>
+        <?php var_dump($dogsProducts[0]) ?>
     </div>
 
-    <div class="container-fluid mt-2 ">
+    <div class="container-fluid mt-2 d-none ">
         <div class="row">
 
             <div id="card" class="card col-xxl-3 col-lg-3 col-md-4 col-sm-6">
@@ -29,6 +29,33 @@
                     </div>
                 </div>
             </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid mt-2">
+        <div class="row justify-content-evenly ">
+            <?php foreach ($dogsProducts as $product) : ?>
+
+                <div id="card" class="card col-xxl-3 col-lg-3 col-md-4 col-sm-6">
+                    <div class="card-header">
+                        <img class="card-img-top p-1" src="<?= $product->path ?>" alt="<?= $product->name ?>">
+                    </div>
+                    <div class="card-body d-flex ">
+                        <h4 class="card-title col-10"><?= $product->name ?></h4>
+                        <p class="card-text col-2"><?= $product->price ?>&euro;</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row justify-content-evenly ">
+                            <?php foreach ($product->categories as $category) : ?>
+                                <p class="col-xxl-3 col-xl-3 col-md-5 col-sm-6"><?= $category ?></p>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                </div>
+
+            <?php endforeach; ?>
 
         </div>
 

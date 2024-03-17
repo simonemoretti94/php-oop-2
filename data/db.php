@@ -21,8 +21,8 @@ class Product
 
 $dogsProducts = [
     new DogsSpecs('Cereal Biscuits', 3.21, './assets/img/dogsSpec_cereal_biscuits.jpeg', ['healty', 'tooths care']),
-    new DogsSpecs('Cereal Biscuits', 3.21, './assets/img/dogsSpec_big_kennel.jpeg', ['healty', 'tooths care']),
-    new DogsSpecs('Cereal Biscuits', 3.21, './assets/img/dogsSpec_bite_balls.jpeg', ['healty', 'tooths care']),
+    new DogsSpecs('Big Kennel', 25.99, './assets/img/dogsSpec_big_kennel.jpeg', ['wide', 'comfortable', 'well rated']),
+    new DogsSpecs('Biting balls set', 5.75, './assets/img/dogsSpec_bite_balls.jpeg', ['amusing', 'pet therapy']),
 ];
 
 
