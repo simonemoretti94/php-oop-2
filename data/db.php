@@ -27,7 +27,7 @@ $dogsProducts = [
 
 
 $catsProducts = [
-    new CatsSpecs('Cereal Biscuits', 3.21, './assets/img/dogsSpec_cereal_biscuits.jpeg', ['healty', 'tooths care']),
-    new CatsSpecs('Cereal Biscuits', 3.21, './assets/img/dogsSpec_big_kennel.jpeg', ['healty', 'tooths care']),
-    new CatsSpecs('Cereal Biscuits', 3.21, './assets/img/dogsSpec_bite_balls.jpeg', ['healty', 'tooths care']),
+    new CatsSpecs('Interactive spiral game', 10.51, './assets/img/catsSpec_interactive_game.jpeg', ['improving', 'object oriented']),
+    new CatsSpecs('kitten nordic house', 35.89, './assets/img/catsSpec_nordic_house.jpeg', ['Safe', 'Easy to mount']),
+    new CatsSpecs('Mixed meat blocks', 3.57, './assets/img/catSpec_meat_parallelograms.jpeg', ['healty', 'Well Balanced']),
 ];
