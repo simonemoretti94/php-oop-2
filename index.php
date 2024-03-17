@@ -34,23 +34,54 @@
 
     </div>
 
-    <div class="container-fluid mt-2">
+    <div class="container-fluid mt-3">
         <div class="row justify-content-evenly ">
             <?php foreach ($dogsProducts as $product) : ?>
 
-                <div id="card" class="card col-xxl-3 col-lg-3 col-md-4 col-sm-6">
-                    <div class="card-header">
-                        <img class="card-img-top p-1" src="<?= $product->path ?>" alt="<?= $product->name ?>">
+                <div id="wrapper-padding " class="col-xxl-3 col-lg-4 col-md-4 col-sm-6" style="padding: .5rem;">
+                    <div id="card" class="card ">
+                        <div class="card-header">
+                            <img class="card-img-top p-1" src="<?= $product->path ?>" alt="<?= $product->name ?>">
+                        </div>
+                        <div class="card-body d-flex justify-content-between  ">
+                            <h4 class="card-title col-lg-10 col-md-8 col-sm-8"><?= $product->name ?></h4>
+                            <p class="card-text col-lg-2 col-md-4 col-sm-4 " style="text-align: right;"><?= $product->price ?>&euro;</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row justify-content-evenly ">
+                                <?php foreach ($product->categories as $category) : ?>
+                                    <p class="col-xxl-3 col-xl-3 col-md-5 col-sm-6"><?= $category ?></p>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body d-flex ">
-                        <h4 class="card-title col-10"><?= $product->name ?></h4>
-                        <p class="card-text col-2"><?= $product->price ?>&euro;</p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="row justify-content-evenly ">
-                            <?php foreach ($product->categories as $category) : ?>
-                                <p class="col-xxl-3 col-xl-3 col-md-5 col-sm-6"><?= $category ?></p>
-                            <?php endforeach; ?>
+                </div>
+
+            <?php endforeach; ?>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid mt-2">
+        <div class="row justify-content-evenly ">
+            <?php foreach ($catsProducts as $product) : ?>
+
+                <div id="wrapper-padding " class="col-xxl-3 col-lg-4 col-md-4 col-sm-6" style="padding: .5rem;">
+                    <div id="card" class="card ">
+                        <div class="card-header">
+                            <img class="card-img-top p-1" src="<?= $product->path ?>" alt="<?= $product->name ?>">
+                        </div>
+                        <div class="card-body d-flex justify-content-between  ">
+                            <h4 class="card-title col-lg-10 col-md-8 col-sm-8"><?= $product->name ?></h4>
+                            <p class="card-text col-lg-2 col-md-4 col-sm-4 " style="text-align: right;"><?= $product->price ?>&euro;</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row justify-content-evenly ">
+                                <?php foreach ($product->categories as $category) : ?>
+                                    <p class="col-xxl-3 col-xl-3 col-md-5 col-sm-6"><?= $category ?></p>
+                                <?php endforeach; ?>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -83,7 +114,7 @@
         }
 
         & .card-footer {
-            height: 100px;
+            height: auto;
 
             >.row {
                 >p {
@@ -91,7 +122,8 @@
                     border: solid 1px black;
                     border-radius: 8px;
 
-                    font-size: medium;
+                    font-size: small;
+                    vertical-align: middle;
                 }
             }
         }
