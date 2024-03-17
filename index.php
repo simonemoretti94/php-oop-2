@@ -5,35 +5,6 @@
 <main>
     <?php require_once __DIR__ . '/data/db.php'; ?>
 
-    <div class="d-none">
-        <?php var_dump($dogsProducts) ?>
-        <?php var_dump($dogsProducts[0]) ?>
-    </div>
-
-    <div class="container-fluid mt-2 d-none ">
-        <div class="row">
-
-            <div id="card" class="card col-xxl-3 col-lg-3 col-md-4 col-sm-6">
-                <div class="card-header">
-                    <img class="card-img-top p-1" src="<?= $dogsProducts[0]->path ?>" alt="<?= $dogsProducts[0]->name ?>">
-                </div>
-                <div class="card-body d-flex ">
-                    <h4 class="card-title col-10"><?= $dogsProducts[0]->name ?></h4>
-                    <p class="card-text col-2"><?= $dogsProducts[0]->price ?>&euro;</p>
-                </div>
-                <div class="card-footer">
-                    <div class="row justify-content-evenly ">
-                        <?php foreach ($dogsProducts[0]->categories as $category) : ?>
-                            <p class="col-xxl-3 col-xl-3 col-md-5 col-sm-6"><?= $category ?></p>
-                        <?php endforeach; ?>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
     <div class="container-fluid mt-3">
         <div class="row justify-content-evenly ">
             <?php foreach ($dogsProducts as $product) : ?>
@@ -96,6 +67,11 @@
 
         </div>
 
+    </div>
+
+    <div class="d-none">
+        <?php var_dump($dogsProducts) ?>
+        <?php var_dump($dogsProducts[0]) ?>
     </div>
 </main>
 
@@ -183,7 +159,6 @@
             & h6 {
                 display: block;
             }
-
         }
     }
 </style>

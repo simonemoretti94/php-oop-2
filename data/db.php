@@ -10,12 +10,11 @@ require_once __DIR__ . '/../models/cats.php';
  */
 class Product
 {
-    function __construct(public string $name, public float $price, public string $path, public array $categories)
+    function __construct(public string $name, public float $price, public string $path)
     {
         $this->name = $name;
         $this->price = $price;
         $this->path = $path;
-        $this->categories = $categories;
     }
 }
 
