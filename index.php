@@ -45,6 +45,7 @@
                         </div>
                         <div class="card-body d-flex justify-content-between  ">
                             <h4 class="card-title col-lg-10 col-md-8 col-sm-8"><?= $product->name ?></h4>
+                            <h6 class="card-title col-lg-10 col-md-8 col-sm-8"><?= $product->name ?></h6>
                             <p class="card-text col-lg-2 col-md-4 col-sm-4 " style="text-align: right;"><?= $product->price ?>&euro;</p>
                         </div>
                         <div class="card-footer">
@@ -126,6 +127,35 @@
                     vertical-align: middle;
                 }
             }
+        }
+    }
+
+
+    @media screen and (min-width: 576px) {
+        .card-body {
+            & h4 {
+                display: block;
+            }
+
+            & h6 {
+                display: none;
+            }
+
+        }
+    }
+
+
+    @media screen and (max-width: 576px) {
+
+        .card-body {
+            & h4 {
+                display: none;
+            }
+
+            & h6 {
+                display: block;
+            }
+
         }
     }
 </style>
