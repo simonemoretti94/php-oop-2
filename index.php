@@ -136,6 +136,11 @@
     }
 
     @media screen and (min-width: 576px) {
+
+        #card {
+            margin-top: .5rem;
+        }
+
         .card-body {
             & h4 {
                 display: block;
@@ -150,6 +155,10 @@
 
 
     @media screen and (max-width: 576px) {
+
+        #card {
+            margin-top: 1rem;
+        }
 
         .card-body {
             & h4 {
