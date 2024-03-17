@@ -18,3 +18,16 @@ class Product
         $this->categories = $categories;
     }
 }
+
+$dogsProducts = [
+    new DogsSpecs('Cereal Biscuits', 3.21, './assets/img/dogsSpec_cereal_biscuits.jpeg', ['healty', 'tooths care']),
+    new DogsSpecs('Cereal Biscuits', 3.21, './assets/img/dogsSpec_big_kennel.jpeg', ['healty', 'tooths care']),
+    new DogsSpecs('Cereal Biscuits', 3.21, './assets/img/dogsSpec_bite_balls.jpeg', ['healty', 'tooths care']),
+];
+
+
+$catsProducts = [
+    new CatsSpecs('Cereal Biscuits', 3.21, './assets/img/dogsSpec_cereal_biscuits.jpeg', ['healty', 'tooths care']),
+    new CatsSpecs('Cereal Biscuits', 3.21, './assets/img/dogsSpec_big_kennel.jpeg', ['healty', 'tooths care']),
+    new CatsSpecs('Cereal Biscuits', 3.21, './assets/img/dogsSpec_bite_balls.jpeg', ['healty', 'tooths care']),
+];
