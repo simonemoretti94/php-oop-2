@@ -13,3 +13,12 @@ class Cats
         $this->kennels = $kennels;
     }
 }
+
+class CatsSpecs extends Cats
+{
+    function __construct($foods, $games, $kennels, public bool $scratchers)
+    {
+        parent::__construct($foods, $games, $kennels);
+        $this->scratchers = $scratchers;
+    }
+}

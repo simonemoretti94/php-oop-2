@@ -13,3 +13,12 @@ class Dogs
         $this->kennels = $kennels;
     }
 }
+
+class DogsSpecs extends Dogs
+{
+    function __construct($foods, $games, $kennels, public bool $biters)
+    {
+        parent::__construct($foods, $games, $kennels);
+        $this->biters = $biters;
+    }
+}

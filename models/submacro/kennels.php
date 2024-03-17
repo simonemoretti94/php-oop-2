@@ -1,8 +1,11 @@
 <?php
 class Kennels
 {
-    function __construct(public array $kennels)
+    function __construct(public string $imgpath, public string $title, public float $price, public string $type)
     {
-        $this->kennels = $kennels;
+        $this->imgpath = $imgpath;
+        $this->title = $title;
+        $this->price = $price;
+        $this->type = $type;
     }
 }
