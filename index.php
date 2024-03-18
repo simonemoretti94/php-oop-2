@@ -79,8 +79,13 @@
 <?php require_once __DIR__ . '/parts/footer.php' ?>
 
 <style>
+    main {
+        background-color: rgb(223, 223, 223) !important;
+    }
+
     #card {
         height: 450px;
+        border: solid .5px grey;
 
         >.card-header {
             height: 300px;
