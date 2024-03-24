@@ -128,6 +128,8 @@
         color: red;
         text-decoration: underline;
         font-weight: 500;
+
+        cursor: pointer;
     }
 
     #wrapper-padding {
@@ -137,6 +139,8 @@
             transform: scale(.9);
             background-color: rgb(6, 220, 6);
             color: white;
+
+            cursor: pointer;
         }
     }
 
